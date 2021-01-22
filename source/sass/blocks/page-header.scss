@@ -1,0 +1,13 @@
+.page-header {
+  height: 96px;
+  border-bottom: 1px solid $line-color;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__wrapper {
+  @include wrapper;
+
+  display: flex;
+  justify-content: space-between;
+}

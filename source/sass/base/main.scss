@@ -1,0 +1,23 @@
+body {
+  @include base-text;
+
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+}
+
+button {
+  @include base-text;
+
+  border: none;
+}
+
+a {
+  @include base-text;
+
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
