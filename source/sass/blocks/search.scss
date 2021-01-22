@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+}
+
+.search__input {
+  width: 294px;
+  height: 48px;
+  line-height: 48px;
+  padding: 0;
+  border: 1px solid $line-color;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+
+.search__button {
+  @include button;
+
+  width: 122px;
+}
