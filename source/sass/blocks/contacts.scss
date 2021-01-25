@@ -1,0 +1,37 @@
+.contacts {
+  display: flex;
+}
+
+.contacts__phone {
+  position: relative;
+  padding-left: 24px;
+  padding-right: 48px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/phone.svg');
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 0;
+    width: 14px;
+    height: 17px;
+  }
+}
+
+.contacts__address {
+  position: relative;
+  font-style: normal;
+  padding-left: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/adress.svg');
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 0;
+    width: 14px;
+    height: 17px;
+  }
+}
