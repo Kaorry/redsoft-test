@@ -1,12 +1,11 @@
-.page-header {
+.page-footer {
   height: 96px;
-  border-bottom: 1px solid $line-color;
-  box-sizing: border-box;
+  background-color: $background-footer;
   display: flex;
   align-items: center;
 }
 
-.page-header__wrapper {
+.page-footer__wrapper {
   @include wrapper;
 
   position: relative;

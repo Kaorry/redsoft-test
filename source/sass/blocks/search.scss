@@ -2,14 +2,33 @@
   display: flex;
 }
 
-.search__input {
+input[type="search"] {
+  @include h5;
+
   width: 294px;
   height: 48px;
   line-height: 48px;
   padding: 0;
+  color: $grey;
+  background-color: $background;
   border: 1px solid $line-color;
-  border-bottom: none;
+  border-right: none;
   box-sizing: border-box;
+  padding-left: 16px;
+
+  &:focus,
+  &:active {
+    @include h5;
+
+    padding-left: 16px;
+    background-color: $background;
+  }
+
+  &::placeholder {
+    @include h5;
+
+    line-height: 48px;
+  }
 }
 
 .search__button {

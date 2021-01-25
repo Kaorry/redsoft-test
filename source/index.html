@@ -36,7 +36,7 @@
         </nav>
         <div class="search">
           <label for="search">
-            <input class="search__input" type="search" name="search" id="search" placeholder="Поиск по названию картины">
+            <input type="search" name="search" id="search" placeholder="Поиск по названию картины">
           </label>
           <button class="search__button" type="button">Найти</button>
         </div>
@@ -46,64 +46,78 @@
     <main>
       <h1 class="visually-hidden">Картины эпохи Возрождения</h1>
       <section class="catalog">
-        <h1>Картины эпохи Возрождения</h1>
+        <h1 class="catalog__title">Картины эпохи Возрождения</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img src="" width="280" height="160" alt="Рождение Венеры">
-            <h2>«Рождение Венеры» Сандро Боттичелли</h2>
-            <p>2 000 000 $</p>
-            <p>1 000 000 $</p>
-            <a href="">Купить</a>
+            <img class="catalog__image" src="./img/birth_of_venus.jpg" alt="Рождение Венеры">
+            <h2 class="catalog__item-title">«Рождение Венеры» Сандро Боттичелли</h2>
+            <span class="catalog__prices">
+              <p class="catalog__price catalog__price--old">2 000 000 $</p>
+              <p class="catalog__price">1 000 000 $</p>
+            </span>
+            <a class="catalog__button" href="">Купить</a>
           </li>
           <li class="catalog__item">
-            <img src="" width="280" height="160" alt="Тайная вечеря">
-            <h2>«Тайная вечеря»  Леонардо да Винчи</h2>
-            <p>3 000 000 $</p>
-            <a href="">Купить</a>
+            <img class="catalog__image" src="./img/last_supper.jpg" alt="Тайная вечеря">
+            <h2 class="catalog__item-title">«Тайная вечеря»  Леонардо да Винчи</h2>
+            <span class="catalog__prices">
+              <p class="catalog__price">3 000 000 $</p>
+            </span>
+            <a class="catalog__button" href="">Купить</a>
           </li>
           <li class="catalog__item">
-            <img src="" width="280" height="160" alt="Сотворение Адама">
-            <h2>«Сотворение Адама» Микеланджело</h2>
-            <p>6 000 000 $</p>
-            <p>5 000 000 $</p>
-            <a href="">Купить</a>
+            <img class="catalog__image" src="./img/creation_of_adam.jpg" alt="Сотворение Адама">
+            <h2 class="catalog__item-title">«Сотворение Адама» Микеланджело</h2>
+            <span class="catalog__prices">
+              <p class="catalog__price catalog__price--old">6 000 000 $</p>
+              <p class="catalog__price">5 000 000 $</p>
+            </span>
+            <a class="catalog__button-basket" href="">
+              <svg class="catalog__button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5316 4.80934L7.63353 14.2369L3.34826 10.1923" stroke="#F4F6F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              В корзине
+            </a>
           </li>
-          <li class="catalog__item">
-            <img src="" width="280" height="160" alt="Картина">
-            <h2>«Урок анатомии» Рембрандт</h2>
-            <p>2 000 000 $</p>
-            <a href="">Купить</a>
+          <li class="catalog__item catalog__item--sold">
+            <img class="catalog__image" src="./img/anatomy_lesson.jpg" alt="Картина">
+            <h2 class="catalog__item-title">«Урок анатомии» Рембрандт</h2>
+            <span class="catalog__prices">
+              <p class="catalog__price">Продана на аукционе</p>
+            </span>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img src="" width="48" height="48" alt="Логотип">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="main-nav__logo" href="index.html">
+          <img src="./img/logo-museum.png" width="48" height="48" alt="Логотип">
         </a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Каталог</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Доставка</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Оплата</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Контакты</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">О галерее</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="contacts">
-        <a class="contacts__phone" href="tel:+74955555555">+7 (495) 555-55-55</a>
-        <address class="contacts__address">г. Москва, ул. Расплетина, 24</address>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">О галерее</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <a class="contacts__phone" href="tel:+74955555555">+7 (495) 555-55-55</a>
+          <address class="contacts__address">г. Москва, ул. Расплетина, 24</address>
+        </div>
       </div>
     </footer>
   </body>
